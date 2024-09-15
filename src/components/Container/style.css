@@ -1,0 +1,27 @@
+/* Base container */
+.custom-responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .custom-responsive-container {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-responsive-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-responsive-container {
+        padding: 8px;
+    }
+}

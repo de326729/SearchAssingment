@@ -1,0 +1,47 @@
+/* Container for search box */
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Search input with default state */
+.search-input {
+    width: 241px;
+    height: 38px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Active/Focus state */
+.search-input:focus {
+    border-color: #7952b3;
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+    outline: none;
+}
+
+/* Disabled state */
+.search-input:disabled {
+    background-color: rgb(233, 236, 239);
+    cursor: not-allowed;
+}
+
+/* Keyboard shortcut styling */
+.keyboard-shortcut {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #495057;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 2px;
+    height: 24px;
+    padding: 0 4px;
+    line-height: 24px;
+    background-color: white;
+    pointer-events: none;
+}
